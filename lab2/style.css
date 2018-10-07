@@ -1,0 +1,102 @@
+table,tr,td {
+	border: 1px solid black;
+}
+
+table {
+	width: 100%;
+	height: 900px;
+	border-collapse: collapse; 
+	padding: 0;
+	margin: 0px;
+}
+  
+.first_col{
+	width: 700px;
+	height: 600px;
+	position: relative;
+}	
+
+ 
+.first_img {
+	top: 150px;
+	left: 30px;
+	width: 40%;
+	height: 25%;
+	position:absolute;
+}
+  
+.second_img {
+	position:absolute;
+	top: 290px;
+	left: 190px;
+	width: 40%;
+	height: 20%;
+}
+
+.third_img {
+	position:absolute;
+	top: 370px;
+	left: 200px;
+	width: 120%;
+	height: 80%;
+}
+ 
+.animation{
+	position:absolute;
+	border-radius: 50%;
+	top: 730px;
+	height: 150px;
+	width: 150px;
+	left: 10px;
+	animation: pulse 10s infinite;
+	z-index: 1;
+}
+
+@keyframes pulse{
+	0%{}
+	50% {
+		left: 1700px;
+	 	transform: rotate(360deg); 
+	 	opacity: 0.2; 
+	}
+	100%{}
+}
+
+body{
+	background: #ffffff
+}
+
+.bg_second {
+  	background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("images/bike-road.jpg") no-repeat;
+}
+	
+.text {
+	background-origin: border-box;
+	padding: 10px;
+	text-align: justify;
+	font-size: 20px;
+	font-weight: 900;
+	top: 10px;
+	left: 10px;
+	column-count: 3;
+	margin: 20px;
+	word-wrap: break-word;
+	text-shadow: 1px 1px 2px black, 0 0 1em yellow;
+}
+
+.first-nesting { 
+	height: 250px; 
+	width: 250px; 
+	position: absolute; 
+	left: 125px; 
+	top: 50px;
+}
+
+.second-nesting {
+	left:440px;
+	top:367px;
+	color: rgb(255, 0, 0); 
+	font-size: 30px;
+	font-weight: 900;
+	position: relative;
+}
